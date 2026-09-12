@@ -6,9 +6,8 @@ map for students.
 
 ## Start here
 
-- **[eecs281.org](https://eecs281.org)** — the course site: syllabus,
-  schedule, staff, and policies. If you're looking for something, look there
-  first.
+- **[Course website](https://eecs.io/eecs281)** — syllabus, schedule, staff,
+  and policies. If you're looking for something, look there first.
 - **Canvas** — announcements, lecture materials, and grades for enrolled
   students.
 - **[Ed Discussion](https://edstem.org)** — questions and answers; the
