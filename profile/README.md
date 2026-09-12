@@ -17,4 +17,6 @@
     <a href="https://www.gradescope.com"><b>Gradescope</b></a>
     &nbsp;·&nbsp;
     <a href="https://edstem.org"><b>Ed Discussion</b></a>
+    &nbsp;·&nbsp;
+    <a href="mailto:eecs281admin@umich.edu"><b>Email staff</b></a>
 </p>

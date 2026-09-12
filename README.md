@@ -12,6 +12,9 @@ map for students.
   students.
 - **[Ed Discussion](https://edstem.org)** — questions and answers; the
   fastest way to reach course staff.
+- **[eecs281admin@umich.edu](mailto:eecs281admin@umich.edu)** — the other
+  primary staff contact, for matters that don't belong on Ed (extensions,
+  accommodations, personal concerns).
 - **Gradescope** — where projects and labs are submitted and autograded.
 
 ## What's public in this org
