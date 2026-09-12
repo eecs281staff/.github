@@ -11,6 +11,8 @@ map for students.
   first.
 - **Canvas** — announcements, lecture materials, and grades for enrolled
   students.
+- **[Ed Discussion](https://edstem.org)** — questions and answers; the
+  fastest way to reach course staff.
 - **Gradescope** — where projects and labs are submitted and autograded.
 
 ## What's public in this org
