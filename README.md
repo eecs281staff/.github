@@ -1,78 +1,44 @@
-# EECS 281 Staff Hub
+# EECS 281 — Data Structures and Algorithms
 
-Orientation for course staff of **EECS 281: Data Structures and Algorithms**
-(University of Michigan). This repo is the front door to the `eecs281staff`
-org: what exists, where it lives, what it's built with, and the conventions
-that keep ~35 repos coherent.
+The official GitHub home of **EECS 281** at the University of Michigan. This
+org hosts the course's code and infrastructure; this page is the high-level
+map for students.
 
-## Where everything lives
+## Start here
 
-The org is organized as a **workspace**: one meta-repo,
-[`eecs281staff/eecs281`](https://github.com/eecs281staff/eecs281), declares
-every course repo in a `workspace.yaml` manifest and clones them as child
-directories. To get the whole course on disk:
+- **[eecs281.org](https://eecs281.org)** — the course site: syllabus,
+  schedule, staff, and policies. If you're looking for something, look there
+  first.
+- **Canvas** — announcements, lecture materials, and grades for enrolled
+  students.
+- **Gradescope** — where projects and labs are submitted and autograded.
 
-```bash
-git clone git@github.com:eecs281staff/eecs281.git
-cd eecs281
-bin/sync
-```
+## What's public in this org
 
-| Area | Repos | What's there |
-|---|---|---|
-| Website | `eecs281.org` | The public course site |
-| Projects | `p0-statistics` … `p4-zoo` (19 repos) | Specs, autograders, solutions per project |
-| Labs | `l00-template` … `l10-deals-on-meals` | Quizzes, starter code, slides per lab |
-| Sample code | `wordcount-demo`, `search-demo`, `nqueens-demo` | Small demos shown in lecture |
-| Software | `Makefile`, `official-score`, `xcode_redirect`, `exam-starter-code-distributor` | Student-facing tooling |
-| Slides | `lecture-slides` | PowerPoint source for the lecture decks |
-| Exams | `exam-authoring` | **Retired** — kept for reference |
-| Org profile | `.github` (this repo) | Staff hub |
+Most repos here are private course infrastructure, but a few are published
+for students to use directly:
 
-## Technologies
+| Repo | What it's for |
+|---|---|
+| [`Makefile`](https://github.com/eecs281staff/Makefile) | The course Makefile — build, debug, profile, and package your projects the same way the autograder does. |
+| [`xcode_redirect`](https://github.com/eecs281staff/xcode_redirect) | Helper for running EECS 281 projects comfortably in Xcode. |
+| [`wordcount-demo`](https://github.com/eecs281staff/wordcount-demo) | Sample code from the hash tables lecture. |
+| [`search-demo`](https://github.com/eecs281staff/search-demo) | Sample code from the complexity analysis lecture. |
+| [`nqueens-demo`](https://github.com/eecs281staff/nqueens-demo) | The N-Queens backtracking demo from lecture. |
 
-- **C++** with the course's advanced `Makefile` (debug/release/profile
-  targets, submission tarballs). Students build with the same Makefile the
-  repos carry.
-- **GitHub Pages + Jekyll** for project/lab specs (primer-spec theme) and the
-  course site; deploys run through GitHub Actions.
-- **GitHub Actions** in content repos for the release rhythm: hide-solutions
-  and release-solutions workflows keep answers out of student sight until
-  their release date.
-- **Gradescope** for submissions and autograding.
-- **PowerPoint** for lecture decks; lecture capture flows through
-  MiVideo/Kaltura, with slides and materials surfaced via Canvas.
-- **Claude Code + workspace-toolkit** for staff workflow: the workspace
-  manifest, `bin/sync` / `bin/status`, and the `/push` and `/audit` commands.
+Project and lab specifications are distributed through the course site and
+Canvas, not from this org.
 
-## Scheduling
+## The course, briefly
 
-The course runs every semester; content turns over on a per-semester rhythm:
+EECS 281 teaches the design and analysis of data structures and algorithms in
+modern **C++**: complexity analysis, containers, sorting and searching,
+hashing, trees, graphs, and algorithm families from brute force to dynamic
+programming — with substantial programming projects that put all of it to
+work.
 
-- Each semester selects its project lineup from the `p0`–`p4` pools (one repo
-  per project variant; repos are reused across semesters, not forked).
-- Labs are shared infrastructure, reworked as needed (most recently
-  overhauled August 2026).
-- *(Fill in: current-semester assignments, exam dates, and the staff
-  calendar link.)*
+## A note on academic integrity
 
-## Conventions
-
-1. **Repo naming**: `p<phase>-<slug>` for projects, `l<number>-<slug>` for
-   labs. The workspace manifest is the authoritative list.
-2. **Private by default.** Content repos stay private; only deliberately
-   public things (sample code, the website, student tooling) are public.
-   Solutions ship to students only via the release workflows.
-3. **Sensitive material stays out of repos entirely**: academic-integrity
-   cases, plagiarism-tool output, credentials, and student data never enter
-   the org.
-4. **One repo, one concern.** Cross-repo coordination lives in the workspace
-   repo's docs, not in content repos.
-
-## Onboarding checklist
-
-1. Get added to the `eecs281staff` GitHub org.
-2. Clone the workspace and `bin/sync` (needs `git`, ssh access, `python3`
-   with PyYAML).
-3. Read `AGENTS.md` in the workspace root — the working rules — and skim
-   `workspace.yaml` to learn the map.
+Your solutions to EECS 281 projects and labs are covered by the College of
+Engineering Honor Code. Don't publish them — public repos of project
+solutions harm you and future students, and staff actively monitor for them.
